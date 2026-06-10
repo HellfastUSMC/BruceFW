@@ -25,7 +25,7 @@ static const uint8_t SCL = 5;
 static const uint8_t SS = 10;
 static const uint8_t MOSI = 7;
 static const uint8_t MISO = 2;
-static const uint8_t SCK = 6;
+static const uint8_t SCK = 24;
 
 static const uint8_t A0 = 1;
 static const uint8_t A1 = 2;
@@ -61,7 +61,7 @@ static const uint8_t LP_TX = 11;
 #define GROVE_SDA 4
 #define GROVE_SCL 5
 // SPI
-#define SPI_SCK_PIN 6
+#define SPI_SCK_PIN 28 //выбрать другой пин, для теста
 #define SPI_MOSI_PIN 7
 #define SPI_MISO_PIN 2
 #define SPI_SS_PIN 9
@@ -99,11 +99,11 @@ static const uint8_t LP_TX = 11;
 // Common TFT definitions
 #define TFT_BACKLIGHT_ON 1
 #define TFT_BL 25
-#define TFT_RST -1
+#define TFT_RST 26
 #define TFT_DC 24
 #define TFT_MISO 2 // set to share SPI with other devices
 #define TFT_MOSI 7
-#define TFT_SCLK 6
+#define TFT_SCLK 28
 #define TFT_CS 23
 #define TOUCH_CS 1
 #define SMOOTH_FONT 1
@@ -131,15 +131,15 @@ static const uint8_t LP_TX = 11;
 #else
 // Buttons
 #define HAS_3_BUTTONS
-#define SEL_BTN 28
-#define DW_BTN 1
-#define UP_BTN 0
+#define SEL_BTN -1
+#define DW_BTN -1
+#define UP_BTN -1
 #define BTN_ACT LOW
 #define DEEPSLEEP_WAKEUP_PIN SEL_BTN
 #endif
 
 // InfraRed
-#define RXLED 26
+#define RXLED -1
 #define TXLED 3
 #define LED_ON HIGH
 #define LED_OFF LOW
